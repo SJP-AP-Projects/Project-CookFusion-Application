@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!-- Bandeau avec le nom de l'application -->
+    <TextView
+        android:id="@+id/app_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#6200EE"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="CookFusion App"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- Titre du formulaire -->
+    <TextView
+        android:id="@+id/titre_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:gravity="center"
+        android:text="Connexion"
+        android:textColor="#6200EE"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- Champ Login -->
+    <EditText
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="Champ Login"
+        android:hint="Login"
+        android:importantForAccessibility="yes"
+        android:inputType="text"
+        android:padding="12dp" />
+
+    <!-- Champ Mot de passe -->
+    <EditText
+        android:id="@+id/mot_de_passe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:contentDescription="Champ Mot de passe"
+        android:hint="Mot de passe"
+        android:importantForAccessibility="yes"
+        android:inputType="textPassword"
+        android:padding="12dp" />
+
+    <!-- Bouton de connexion -->
+    <Button
+        android:id="@+id/btn_connexion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="#6200EE"
+        android:text="Se connecter"
+        android:textColor="#FFFFFF" />
+
+</LinearLayout>
