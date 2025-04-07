@@ -14,7 +14,7 @@ public class MenuActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
 
-        /*Button btn_recette = findViewById(R.id.btn_recette);
+        Button btn_recette = findViewById(R.id.btn_recette);
 
         btn_recette.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -32,6 +32,6 @@ public class MenuActivity extends AppCompatActivity {
                 Intent intent = new Intent(MenuActivity.this, TypeActivity.class);
                 startActivity(intent);
             }
-        });*/
+        });
     }
 }

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" android:padding="16dp"
+    tools:context=".controleur.TypeActivity">
+
+    <ListView android:id="@+id/listView" android:layout_width="match_parent" android:layout_height="456dp"/>
+
+    <Button
+        android:id="@+id/btn_AjoutType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ajouter un type" />
+
+    <Button
+        android:id="@+id/btn_retour"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Retour" />
+</LinearLayout>

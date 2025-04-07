@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".controleur.AjoutTypeActivity">
+
+    <!-- Bandeau avec le nom de l'application -->
+    <TextView
+        android:id="@+id/app_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nom de l'App"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="16dp"
+        android:background="#6200EE"
+        android:textColor="#FFFFFF" />
+
+    <!-- Identifiant -->
+    <EditText
+        android:id="@+id/numType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Numéro Type"
+        android:importantForAccessibility="yes"
+        android:inputType="text" />
+
+    <!-- Nom -->
+    <EditText
+        android:id="@+id/libelleType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="libelle Type"
+        android:importantForAccessibility="yes"
+        android:inputType="text" />
+
+
+    <!-- Bouton Ajouter -->
+    <Button
+        android:id="@+id/btn_ajouter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:importantForAccessibility="yes"
+        android:text="Ajouter" />
+
+    <!-- Bouton Retour -->
+    <Button
+        android:id="@+id/btn_AjoutType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:importantForAccessibility="yes"
+        android:text="Retour" />
+
+</LinearLayout>
