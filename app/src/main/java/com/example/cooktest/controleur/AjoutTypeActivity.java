@@ -47,7 +47,11 @@ public class AjoutTypeActivity extends AppCompatActivity {
                 et_libelleType.getText().toString()
                 );
 
-        unTypeDAO.ajouterType(unType);
-        Toast.makeText(this,"Ajout éffectuer", Toast.LENGTH_SHORT).show();
+        if (unTypeDAO.ajouterType(unType)==1){
+            Toast.makeText(this,"Ajout éffectuer", Toast.LENGTH_SHORT).show();
+        }else{
+            Toast.makeText(this,"Erreur ajout (vérifier le numType)", Toast.LENGTH_SHORT).show();
+        }
+
     }
 }
