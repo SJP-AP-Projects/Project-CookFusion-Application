@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".controleur.RecetteActivity">
+    tools:context=".controleur.SessionActivity">
 
     <TextView
         android:id="@+id/app_name"
@@ -19,25 +19,26 @@
         android:textSize="24sp"
         android:textStyle="bold" />
 
-    <!-- Espacement entre le bandeau et les boutons -->
     <Space
         android:layout_width="match_parent"
         android:layout_height="16dp" />
 
     <ListView
-        android:id="@+id/listRecettes"
-        android:layout_width="409dp"
-        android:layout_height="453dp" />
+        android:id="@+id/listSessions"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
 
     <Button
-        android:id="@+id/btn_ajoutRecette"
+        android:id="@+id/btn_ajoutSession"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Ajouter une recette" />
+        android:text="Ajouter une session" />
 
     <Button
         android:id="@+id/btn_retour"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Retour" />
+
 </LinearLayout>

@@ -48,7 +48,7 @@ public class TypeActivity extends AppCompatActivity {
             }
         });
 
-        Button btn_AjoutType = findViewById(R.id.btn_AjoutType);
+        Button btn_AjoutType = findViewById(R.id.btn_ajouttype);
 
         btn_AjoutType.setOnClickListener(new View.OnClickListener(){
 

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".controleur.DetailsRecetteActivity">
+
+    <!-- Bandeau avec le nom de l'application -->
+    <TextView
+        android:id="@+id/app_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CookFusion App"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="16dp"
+        android:background="#6200EE"
+        android:textColor="#FFFFFF" />
+
+    <EditText
+        android:id="@+id/numRecette"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Numéro Recette"
+        android:importantForAccessibility="yes"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/libelleRecette"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="libellé Recette"
+        android:importantForAccessibility="yes"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Description"
+        android:importantForAccessibility="yes"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="URL image"
+        android:importantForAccessibility="yes"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/numType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="numéro Type"
+        android:importantForAccessibility="yes"
+        android:inputType="text" />
+
+    <!-- Bouton Soumettre -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_modifier"
+            android:layout_width="102dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="Bouton Modifier"
+            android:importantForAccessibility="yes"
+            android:text="Modifier" />
+
+        <Button
+            android:id="@+id/btn_supprimer"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:contentDescription="Bouton Supprimer"
+            android:importantForAccessibility="yes"
+            android:text="Supprimer" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_retour"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Retour" />
+</LinearLayout>

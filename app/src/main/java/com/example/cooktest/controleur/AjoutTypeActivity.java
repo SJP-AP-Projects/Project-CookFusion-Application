@@ -34,6 +34,16 @@ public class AjoutTypeActivity extends AppCompatActivity {
             }
         });
 
+        Button btn_retour = (Button) findViewById(R.id.btn_retour);
+        btn_retour.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+                Intent intent = new Intent(AjoutTypeActivity.this, TypeActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
     private void ajouter(){

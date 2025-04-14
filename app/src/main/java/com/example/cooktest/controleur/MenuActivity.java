@@ -33,5 +33,15 @@ public class MenuActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        Button btn_session = findViewById(R.id.btn_session);
+
+        btn_session.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MenuActivity.this, SessionActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }

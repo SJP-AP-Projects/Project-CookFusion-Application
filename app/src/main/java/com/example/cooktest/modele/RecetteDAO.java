@@ -35,4 +35,68 @@ public class RecetteDAO {
         }
         return lesRecettes;
     }
+
+    public int ajouterRecette(Recette uneRecette) {
+        SQLiteDatabase bd = accesBD.getWritableDatabase();
+
+        String req = "INSERT INTO Recette " +
+                "values('" + uneRecette.getNumRecette() + "','" +
+                uneRecette.getLibelleRecette() + "','" +
+                uneRecette.getDescription() + "','" +
+                uneRecette.getImage() + "','" +
+                uneRecette.getNumType() + "')";
+        Log.d("log", req);
+        try {
+            bd.execSQL(req);
+            bd.close();
+            return 1;
+        } catch (Exception e) {
+            Log.e("log", "Erreur SQL : " + e.getMessage());
+            bd.close();
+            return 0;
+        }
+    }
+
+    public int modifierRecette(Recette nvRecette, Recette ancRecette) {
+        SQLiteDatabase bd = accesBD.getWritableDatabase();
+
+        String req = "UPDATE Recette " +
+                "SET numRecette = '" + nvRecette.getNumRecette() +
+                "', libelleRecette = '" + nvRecette.getLibelleRecette() +
+                "', description = '" + nvRecette.getDescription() +
+                "', image = '" + nvRecette.getImage() +
+                "', numType = '" + nvRecette.getNumType() +
+                "' WHERE numRecette ='" + ancRecette.getNumRecette() + "'";
+
+        Log.d("log", req);
+
+        try {
+            bd.execSQL(req);
+            bd.close();
+            return 1;
+        } catch (Exception e) {
+            Log.e("log", "Erreur SQL : " + e.getMessage());
+            bd.close();
+            return 0;
+        }
+    }
+
+    public Boolean supprimerRecette(Recette uneRecette){
+        SQLiteDatabase bd = accesBD.getWritableDatabase();
+
+        String req = "DELETE FROM Recette " +
+                " WHERE numRecette ='" + uneRecette.getNumRecette() + "'";
+
+        Log.d("log", req);
+
+        try {
+            bd.execSQL(req);
+            bd.close();
+            return true;
+        } catch (Exception e) {
+            Log.e("log", "Erreur SQL : " + e.getMessage());
+            bd.close();
+            return false;
+        }
+    }
 }
