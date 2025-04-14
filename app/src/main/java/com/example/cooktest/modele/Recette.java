@@ -35,4 +35,5 @@ public class Recette {
     public String toString() {
         return numRecette + " " + libelleRecette;
     }
+
 }

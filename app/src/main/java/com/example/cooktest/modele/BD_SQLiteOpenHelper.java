@@ -89,6 +89,10 @@ public class BD_SQLiteOpenHelper extends SQLiteOpenHelper {
         db.execSQL("INSERT INTO SessionCours (numSession, nomSession, dateSession, heureDebut, heureFin, prix, nbPlaceMax, nbPlacePrise) VALUES \n" +
                 "    ('1', 'Italien', '15/02', '18h00', '20h00', '200', '20', '17'),\n" +
                 "    ('2', 'Français', '17/08', '19h00', '21h00', '250', '20', '14');");
+        db.execSQL("INSERT INTO Proposer (numRecette, numSession) VALUES \n" +
+                "    ('1', '2'),\n" +
+                "    ('2', '1'),\n" +
+                "    ('3', '2');");
 
 
 

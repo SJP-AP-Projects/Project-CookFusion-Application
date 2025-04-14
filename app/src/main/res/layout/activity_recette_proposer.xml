@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".controleur.RecetteProposerActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/app_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#6200EE"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="CookFusion App"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <!-- Dropdown Spinner -->
+        <Spinner
+            android:id="@+id/spinner_recette"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Bouton Ajouter -->
+        <Button
+            android:id="@+id/btn_ajouter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ajouter"
+            android:textColor="#000000"
+            android:background="#6200EE"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:layout_marginBottom="32dp" />
+
+        <!-- Champs de texte pour les noms de recette -->
+        <EditText
+            android:id="@+id/edit_nom_recette_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="nom recette 1"
+            android:inputType="text"
+            android:textColorHint="#A0A0A0" />
+
+        <EditText
+            android:id="@+id/edit_nom_recette_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="nom recette 2"
+            android:inputType="text"
+            android:textColorHint="#A0A0A0" />
+
+        <EditText
+            android:id="@+id/edit_nom_recette_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="nom recette 3"
+            android:inputType="text"
+            android:textColorHint="#A0A0A0" />
+
+        <EditText
+            android:id="@+id/edit_nom_recette_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="nom recette 4"
+            android:inputType="text"
+            android:textColorHint="#A0A0A0" />
+
+        <EditText
+            android:id="@+id/edit_nom_recette_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="nom recette 5"
+            android:inputType="text"
+            android:textColorHint="#A0A0A0" />
+
+        <EditText
+            android:id="@+id/edit_nom_recette_6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="nom recette 6"
+            android:inputType="text"
+            android:textColorHint="#A0A0A0"
+            android:layout_marginBottom="32dp" />
+
+        <!-- Bouton Valider -->
+        <Button
+            android:id="@+id/btn_valider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Valider"
+            android:textColor="#000000"
+            android:background="#6200EE"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Bouton Retour -->
+        <Button
+            android:id="@+id/btn_retour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Retour"
+            android:textColor="#000000"
+            android:background="#6200EE" />
+    </LinearLayout>
+</LinearLayout>

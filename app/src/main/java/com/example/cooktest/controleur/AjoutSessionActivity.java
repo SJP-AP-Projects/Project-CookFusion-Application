@@ -27,7 +27,17 @@ public class AjoutSessionActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 ajouter();
-                Intent intent = new Intent(AjoutSessionActivity.this, MenuActivity.class);
+                Intent intent = new Intent(AjoutSessionActivity.this, SessionActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        Button btn_retour = (Button) findViewById(R.id.btn_retour);
+        btn_retour.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+                Intent intent = new Intent(AjoutSessionActivity.this, SessionActivity.class);
                 startActivity(intent);
             }
         });

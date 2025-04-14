@@ -36,7 +36,7 @@ public class SessionActivity extends AppCompatActivity {
         ArrayAdapter<Session> monAdapteur = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, collecSession);
         lV_session.setAdapter(monAdapteur);
 
-        /*lV_session.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        lV_session.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent intent = new Intent(SessionActivity.this, DetailsSessionActivity.class);
@@ -55,7 +55,7 @@ public class SessionActivity extends AppCompatActivity {
 
                 startActivity(intent);
             }
-        });*/
+        });
 
         Button btn_ajoutSession = findViewById(R.id.btn_ajoutSession);
 
