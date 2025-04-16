@@ -13,6 +13,24 @@
         android:theme="@style/Theme.CookTest"
         tools:targetApi="31">
         <activity
+            android:name=".controleur.RecetteProposerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".controleur.DetailsSessionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".controleur.AjoutSessionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".controleur.SessionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".controleur.AjoutRecetteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".controleur.DetailsRecetteActivity"
+            android:exported="false" />
+        <activity
             android:name=".controleur.DetailsTypeActivity"
             android:exported="false" />
         <activity
@@ -23,6 +41,9 @@
             android:exported="false" />
         <activity
             android:name=".controleur.TypeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".controleur.SessionActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

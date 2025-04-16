@@ -86,9 +86,17 @@ public class BD_SQLiteOpenHelper extends SQLiteOpenHelper {
                 "    ('1', 'Tarte aux pommes', 'Une délicieuse tarte aux pommes caramélisées.', 'tarte_pommes.jpg', '1'),\n" +
                 "    ('2', 'Spaghetti Carbonara', 'Un plat italien avec des pâtes, des lardons et une sauce crémeuse.', 'carbonara.jpg', '2'),\n" +
                 "    ('3', 'Mousse au chocolat', 'Un dessert gourmand à base de chocolat noir et d’œufs.', 'mousse_chocolat.jpg', '1');");
+        db.execSQL("INSERT INTO SessionCours (numSession, nomSession, dateSession, heureDebut, heureFin, prix, nbPlaceMax, nbPlacePrise) VALUES \n" +
+                "    ('1', 'Italien', '15/02', '18h00', '20h00', '200', '20', '17'),\n" +
+                "    ('2', 'Français', '17/08', '19h00', '21h00', '250', '20', '14');");
+        db.execSQL("INSERT INTO Proposer (numRecette, numSession) VALUES \n" +
+                "    ('1', '2'),\n" +
+                "    ('2', '1'),\n" +
+                "    ('3', '2');");
         db.execSQL("INSERT INTO Adherent (idAdherent, nomAdherent, prenomAdherent, loginAdherent, mdpAdherent, mailAdherent, roleAdherent) VALUES \n" +
                 "    ('1', 'Riviere', 'Fabio', 'M.Riviere', 'Gourmandé', 'f.riviere@gmail.com', 'Admin'),\n" +
                 "    ('2', 'test', 'test', 'test', 'test', 'test', 'Admin');");
+
 
 
         Log.d("log","base de test cree");

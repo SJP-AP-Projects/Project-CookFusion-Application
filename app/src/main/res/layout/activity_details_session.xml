@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".controleur.DetailsSessionActivity">
+
+  <TextView
+      android:id="@+id/app_name"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="CookFusion App"
+      android:textSize="24sp"
+      android:textStyle="bold"
+      android:gravity="center"
+      android:padding="16dp"
+      android:background="#6200EE"
+      android:textColor="#FFFFFF" />
+
+  <!-- Numéro de la session -->
+  <EditText
+      android:id="@+id/numSession"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint="Numéro Session"
+      android:inputType="text" />
+
+  <EditText
+      android:id="@+id/nomSession"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint="Nom Session"
+      android:inputType="text" />
+
+  <!-- Date de session -->
+  <EditText
+      android:id="@+id/dateSession"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint="Date de session (YYYY-MM-DD)"
+      android:inputType="text" />
+
+  <!-- heure de début -->
+  <EditText
+      android:id="@+id/heureDebut"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint="Heure de début (HH-MM)"
+      android:inputType="text" />
+
+  <!-- heure de fin -->
+  <EditText
+      android:id="@+id/heureFin"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint="Heure de fin (HH-MM)"
+      android:inputType="text" />
+
+  <!-- Prix -->
+  <EditText
+      android:id="@+id/prix"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint="Prix"
+      android:inputType="text" />
+
+  <!-- Nombre de Place Max -->
+  <EditText
+      android:id="@+id/nbPlaceMax"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint="Nombre Place Max"
+      android:inputType="text" />
+
+  <!-- Nombre de Place Max -->
+  <EditText
+      android:id="@+id/nbPlacePrise"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint="Nombre Place Prise"
+      android:inputType="text" />
+
+  <Button
+      android:id="@+id/voirRecettes"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Voir les recettes proposées" />
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/btn_modifier"
+        android:layout_width="102dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:contentDescription="Bouton Modifier"
+        android:importantForAccessibility="yes"
+        android:text="Modifier" />
+
+    <Button
+        android:id="@+id/btn_supprimer"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:contentDescription="Bouton Supprimer"
+        android:importantForAccessibility="yes"
+        android:text="Supprimer" />
+  </LinearLayout>
+
+  <Button
+      android:id="@+id/btn_retour"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Retour" />
+
+
+</LinearLayout>

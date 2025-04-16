@@ -5,14 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".controleur.AjoutTypeActivity">
+    tools:context=".controleur.AjoutRecetteActivity">
 
     <!-- Bandeau avec le nom de l'application -->
     <TextView
         android:id="@+id/app_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Nom de l'App"
+        android:text="CookFusion App"
         android:textSize="24sp"
         android:textStyle="bold"
         android:gravity="center"
@@ -22,26 +22,52 @@
 
     <!-- Identifiant -->
     <EditText
-        android:id="@+id/numType"
+        android:id="@+id/numRecette"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Numéro Type"
+        android:hint="Numéro Recette"
         android:importantForAccessibility="yes"
         android:inputType="text" />
 
     <!-- Nom -->
     <EditText
-        android:id="@+id/libelleType"
+        android:id="@+id/libelleRecette"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="libelle Type"
+        android:hint="libelle Recette"
         android:importantForAccessibility="yes"
         android:inputType="text" />
 
+    <!-- Description -->
+    <EditText
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Description"
+        android:inputType="textMultiLine"
+        android:importantForAccessibility="yes" />
+
+    <!-- Image -->
+    <EditText
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="URL de l'image"
+        android:inputType="textUri"
+        android:importantForAccessibility="yes" />
+
+    <!-- Numéro du Type -->
+    <EditText
+        android:id="@+id/numType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Numéro du Type"
+        android:inputType="number"
+        android:importantForAccessibility="yes" />
 
     <!-- Bouton Ajouter -->
     <Button
-        android:id="@+id/btn_ajouter"
+        android:id="@+id/btn_ajoutRecette"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:importantForAccessibility="yes"
@@ -54,5 +80,4 @@
         android:layout_height="wrap_content"
         android:importantForAccessibility="yes"
         android:text="Retour" />
-
 </LinearLayout>
