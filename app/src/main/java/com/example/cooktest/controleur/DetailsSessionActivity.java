@@ -71,6 +71,7 @@ public class DetailsSessionActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(DetailsSessionActivity.this, RecetteProposerActivity.class);
+                intent.putExtra("numSession", uneSession.getNumSession());
                 startActivity(intent);
             }
         });
