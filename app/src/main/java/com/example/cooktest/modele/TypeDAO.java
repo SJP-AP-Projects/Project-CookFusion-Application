@@ -39,15 +39,22 @@ public class TypeDAO {
         return lesTypes;
     }
 
-    public void ajouterType(Type unType) {
+    public int ajouterType(Type unType) {
         SQLiteDatabase bd = accesBD.getWritableDatabase();
 
         String req = "INSERT INTO Type " +
                 "values('" + unType.getNumType() + "','" +
                 unType.getLibelleType() + "')";
         Log.d("log", req);
-        bd.execSQL(req);
-        bd.close();
+        try {
+            bd.execSQL(req);
+            bd.close();
+            return 1;
+        } catch (Exception e) {
+            Log.e("log", "Erreur SQL : " + e.getMessage());
+            bd.close();
+            return 0;
+        }
     }
 
     public int modifierType(Type nvType, Type ancType) {

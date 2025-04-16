@@ -23,14 +23,14 @@ public class BD_SQLiteOpenHelper extends SQLiteOpenHelper {
             "    libelleType text DEFAULT NULL\n" +
             ");";
 
-            private String Utilisateur = "CREATE TABLE IF NOT EXISTS Utilisateur (\n" +
-            "    id text PRIMARY KEY NOT NULL,\n" +
-            "    nom text DEFAULT NULL,\n" +
-            "    prenom text DEFAULT NULL,\n" +
-            "    login text DEFAULT NULL,\n" +
-            "    mdp text DEFAULT NULL,\n" +
-            "    mail text DEFAULT NULL,\n" +
-            "    role text DEFAULT NULL\n" +
+            private String Adherent = "CREATE TABLE IF NOT EXISTS Adherent (\n" +
+            "     idAdherent  text PRIMARY KEY NOT NULL,\n" +
+            "    nomAdherent text DEFAULT NULL,\n" +
+            "    prenomAdherent text DEFAULT NULL,\n" +
+            "    loginAdherent text DEFAULT NULL,\n" +
+            "    mdpAdherent text DEFAULT NULL,\n" +
+            "    mailAdherent text DEFAULT NULL,\n" +
+            "    roleAdherent text DEFAULT NULL\n" +
             ");";
 
             private String Recette = "CREATE TABLE IF NOT EXISTS Recette (\n" +
@@ -56,7 +56,7 @@ public class BD_SQLiteOpenHelper extends SQLiteOpenHelper {
             "    Commentaire text DEFAULT NULL,\n" +
             "    PRIMARY KEY(numSession, id),\n" +
             "    FOREIGN KEY(numSession) REFERENCES SessionCours(numSession),\n" +
-            "    FOREIGN KEY(id) REFERENCES Utilisateur(id)\n" +
+            "    FOREIGN KEY(id) REFERENCES Adherent(idAdherent)\n" +
             ");";
 
     public BD_SQLiteOpenHelper(Context context, String name, SQLiteDatabase.CursorFactory factory, int version) {
@@ -75,7 +75,7 @@ public class BD_SQLiteOpenHelper extends SQLiteOpenHelper {
         db.execSQL(Type);
         db.execSQL(Recette);
         db.execSQL(SessionCours);
-        db.execSQL(Utilisateur);
+        db.execSQL(Adherent);
         db.execSQL(Proposer);
         db.execSQL(Participer);
 
@@ -93,6 +93,9 @@ public class BD_SQLiteOpenHelper extends SQLiteOpenHelper {
                 "    ('1', '2'),\n" +
                 "    ('2', '1'),\n" +
                 "    ('3', '2');");
+        db.execSQL("INSERT INTO Adherent (idAdherent, nomAdherent, prenomAdherent, loginAdherent, mdpAdherent, mailAdherent, roleAdherent) VALUES \n" +
+                "    ('1', 'Riviere', 'Fabio', 'M.Riviere', 'Gourmandé', 'f.riviere@gmail.com', 'Admin'),\n" +
+                "    ('2', 'test', 'test', 'test', 'test', 'test', 'Admin');");
 
 
 

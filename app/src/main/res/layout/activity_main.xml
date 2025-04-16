@@ -34,7 +34,7 @@
 
     <!-- Champ Login -->
     <EditText
-        android:id="@+id/login"
+        android:id="@+id/et_loginAdherent"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
@@ -46,7 +46,7 @@
 
     <!-- Champ Mot de passe -->
     <EditText
-        android:id="@+id/mot_de_passe"
+        android:id="@+id/et_mdpAdherent"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
