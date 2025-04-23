@@ -94,7 +94,7 @@ public class BD_SQLiteOpenHelper extends SQLiteOpenHelper {
                 "    ('2', '1'),\n" +
                 "    ('3', '2');");
         db.execSQL("INSERT INTO Adherent (idAdherent, nomAdherent, prenomAdherent, loginAdherent, mdpAdherent, mailAdherent, roleAdherent) VALUES \n" +
-                "    ('1', 'Riviere', 'Fabio', 'M.Riviere', 'Gourmandé', 'f.riviere@gmail.com', 'Admin'),\n" +
+                "    ('1', 'Riviere', 'Fabio', 'Riviere', 'Gourmande', 'f.riviere@gmail.com', 'Admin'),\n" +
                 "    ('2', 'test', 'test', 'test', 'test', 'test', 'Admin');");
 
 
