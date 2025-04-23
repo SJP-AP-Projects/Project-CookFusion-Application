@@ -46,16 +46,12 @@
             android:paddingRight="24dp"
             android:layout_marginBottom="32dp" />
 
-        <!-- Bouton Retour -->
+         <ListView
+             android:id="@+id/lV_recetteProposee"
+             android:layout_width="match_parent"
+             android:layout_height="377dp" />
 
-        <Button
-            android:id="@+id/btn_valider"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:background="#6200EE"
-            android:text="Valider"
-            android:textColor="#000000" />
+        <!-- Bouton Retour -->
 
         <Button
             android:id="@+id/btn_retour"
