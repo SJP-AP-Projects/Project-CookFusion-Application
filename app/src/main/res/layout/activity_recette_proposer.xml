@@ -46,15 +46,6 @@
             android:paddingRight="24dp"
             android:layout_marginBottom="32dp" />
 
-        <!-- Champs de texte pour les noms de recette -->
-
-        <!-- Bouton Valider -->
-
-        <ListView
-            android:id="@+id/lV_recetteProposee"
-            android:layout_width="match_parent"
-            android:layout_height="377dp" />
-
         <!-- Bouton Retour -->
 
         <Button
