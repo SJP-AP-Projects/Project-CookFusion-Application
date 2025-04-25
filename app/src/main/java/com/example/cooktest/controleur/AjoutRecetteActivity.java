@@ -32,6 +32,15 @@ public class AjoutRecetteActivity extends AppCompatActivity {
             }
         });
 
+        Button btn_retour = (Button) findViewById(R.id.btn_retour);
+        btn_retour.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(AjoutRecetteActivity.this, RecetteActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
     private void ajouter(){
