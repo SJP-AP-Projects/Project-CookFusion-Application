@@ -27,10 +27,10 @@ public class SessionActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_session); // Assure-toi que ce layout existe bien !
+        setContentView(R.layout.activity_session);
 
         uneSessionDAO = new SessionDAO(this);
-        lV_session = findViewById(R.id.listSessions); // Assure-toi que l'id est correct dans activity_session.xml
+        lV_session = findViewById(R.id.listSessions);
         ArrayList<Session> collecSession = uneSessionDAO.recupSessions();
 
         ArrayAdapter<Session> monAdapteur = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, collecSession);
